@@ -1,0 +1,1 @@
+// 0.3 : Non, chaque objet a ses propres valeurs. $this change selon l'objet.
