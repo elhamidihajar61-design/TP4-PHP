@@ -22,4 +22,4 @@ $v2= new Voiture();
 $v2->setMarque("Renault");
 $v2->setcouleur("vert");
 $v2->afficher();
-     
+?>     

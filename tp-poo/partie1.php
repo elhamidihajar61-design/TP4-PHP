@@ -9,22 +9,12 @@ class Personne {
     private string $dateNaissance;   // format "AAAA-MM-JJ"
     private string $villeNaissance;
     private string $cin;
-
-    // ----- Constructeur -----
-    public function __construct(
-        string $nom,
-        string $prenom,
-        string $dateNaissance,
-        string $villeNaissance,
-        string $cin
-    ) {
-        $this->nom = $nom;
-        $this->prenom = $prenom;
-        $this->dateNaissance = $dateNaissance;
-        $this->villeNaissance = $villeNaissance;
-        $this->cin = $cin;
-    }
-
+   // ----- Constructeur -----
+    public function __construct(string $nom, string $prenom) {
+    echo "Création " . __CLASS__ . PHP_EOL;
+    $this->nom = $nom;
+    $this->prenom = $prenom;
+}
     // ----- Méthode publique -----
     public function getName(): string {
          return $this->prenom . " " . $this->nom;
@@ -44,3 +34,4 @@ echo $p->nom . PHP_EOL;
 echo $p->cin;
 echo $p->dateNaissance;
 echo $p->getAge();
+?>
